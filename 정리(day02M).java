@@ -1,27 +1,27 @@
-< Á¤¸® ( Model ) > 
+< ì •ë¦¬ ( Model ) > 
 
-1. Sp02 »ı¼º ( Sp01 º¹»çÇØ¼­ )
-   (1) ÆĞ±âÁö »ı¼º( soo.md.controller ) ÈÄ µî·Ï 
-       servlet-context.xmlÀÇ <context:component-scan base-package="soo.md.controller" />
+1. Sp02 ìƒì„± ( Sp01 ë³µì‚¬í•´ì„œ )
+   (1) íŒ¨ê¸°ì§€ ìƒì„±( soo.md.controller ) í›„ ë“±ë¡ 
+       servlet-context.xmlì˜ <context:component-scan base-package="soo.md.controller" /> 
 
-   (2) soo.md.controller ¼öÁ¤ 
+   (2) soo.md.controller ìˆ˜ì • 
        pom.xml, log4j.xml
 
-2. viewsÇÏÀ§ Æ²»ı¼º 
+2. viewsí•˜ìœ„ í‹€ìƒì„± 
    (1) index.jsp 
-   (2) address Æú´õ»ı¼º
+   (2) address í´ë”ìƒì„±
    
-3. ModelÆ² 
-   (1) DBÅ×ÀÌºí »ı¼º 
-       - °ü¸®ÀÚ°èÁ¤¿¡¼­ address.sql ½ÇÇà 
+3. Modelí‹€ 
+   (1) DBí…Œì´ë¸” ìƒì„± 
+       - ê´€ë¦¬ìê³„ì •ì—ì„œ address.sql ì‹¤í–‰ 
 
-   (2) DAO(AddressMapper) »ı¼º
-       1) DS ¼³Á¤ 
+   (2) DAO(AddressMapper) ìƒì„±
+       1) DS ì„¤ì • 
 	      <1> web.xml 
 		     <listener>
 			    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 		     </listener>
-			    À§ ±âÁ¸ÄÚµåÀÇ ¾Æ·¡¿¡.. 
+			    ìœ„ ê¸°ì¡´ì½”ë“œì˜ ì•„ë˜ì—.. 
 	
 	
 		     <filter>
@@ -74,7 +74,7 @@
 				<constructor-arg ref="hikariConfig" />
 			</bean>	
 
-       2) JDBC ·Î±× ¼³Á¤
+       2) JDBC ë¡œê·¸ ì„¤ì •
 	      <1> pom.xml 
 		    <dependency>
 				<groupId>org.bgee.log4jdbc-log4j2</groupId>
@@ -85,7 +85,7 @@
 	      <2> src/main/resources/log4jdbc.log4j2.properties
 		     log4jdbc.spylogdelegator.name=net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator
 
-	   3) myBatis ¼³Á¤ 
+	   3) myBatis ì„¤ì • 
 	      <1> pom.xml
 		    <dependency>
 				<groupId>org.mybatis</groupId>
@@ -159,9 +159,9 @@
 			 <context:component-scan base-package="soo.md.mapper"/>
 		     
 		   
-		    Tip1) DAOÀÇ Å¬·¡½ºÀ§¿¡ @Repository ÇØÁà¾ß Spring°´Ã¼·Î µî·Ï 
-            Tip2) JUnit(´ÜÀ§) Å×½ºÆ® 
-			   1> pom.xml¿¡¼­ ´ÙÀ½À» È®ÀÎ!
+		    Tip1) DAOì˜ í´ë˜ìŠ¤ìœ„ì— @Repository í•´ì¤˜ì•¼ Springê°ì²´ë¡œ ë“±ë¡ 
+            Tip2) JUnit(ë‹¨ìœ„) í…ŒìŠ¤íŠ¸ 
+			   1> pom.xmlì—ì„œ ë‹¤ìŒì„ í™•ì¸!
 				   <dependency>
 						<groupId>junit</groupId>
 						<artifactId>junit</artifactId>
