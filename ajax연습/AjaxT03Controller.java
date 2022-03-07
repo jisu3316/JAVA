@@ -33,7 +33,7 @@ public class AjaxT03Controller {
 	}
 	
 	@PostMapping("search02")
-	public List<Board> search02(String writer, HttpServletResponse response) {
+	public List<Board> search02(String writer) {
 		List<Board> list = service.selectByWriterS(writer);
 	
 		return list;
