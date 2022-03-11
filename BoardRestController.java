@@ -139,10 +139,10 @@ public class BoardRestController {
 
 	    // 4 params(to, from, type, text) are mandatory. must be filled
 	    HashMap<String, String> params = new HashMap<String, String>();
-	    params.put("to", "01040650757");
-	    params.put("from", "01033163268");
+	    params.put("to", "받을사람 ");
+	    params.put("from", "내번호넣기");
 	    params.put("type", "SMS");
-	    params.put("text", "ㅎㅇ");
+	    params.put("text", "스프링으로 문자 보내기");
 	    params.put("app_version", "test app 1.2"); // application name and version
 
 	    try {
