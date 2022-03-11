@@ -133,8 +133,8 @@ public class BoardRestController {
 	}
 	@GetMapping(value="sms")
 	public void sms() {
-		String api_key = "NCSZ2LXLGBYFDNJR";
-	    String api_secret = "Y5AC73PITQIDRE7FNME2VG0F7WLFYIQG";
+		String api_key = "API키";
+	    String api_secret = "SECRET";
 	    Message coolsms = new Message(api_key, api_secret);
 
 	    // 4 params(to, from, type, text) are mandatory. must be filled
