@@ -131,7 +131,7 @@ public class BoardRestController {
 		}
 		
 	}
-	@GetMapping(value="sms")
+	@GetMapping(value="sms")//
 	public void sms() {
 		String api_key = "API키";
 	    String api_secret = "SECRET";
