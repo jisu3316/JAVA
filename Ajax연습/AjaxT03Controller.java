@@ -20,7 +20,7 @@ import lombok.AllArgsConstructor;
 @Controller
 @RequestMapping("ajax03")
 @AllArgsConstructor
-@ResponseBody//이밑에는 제이슨 형태로날라감 
+@ResponseBody//이밑에는 제이슨 형태로날라감  
 public class AjaxT03Controller {
 	
 	private BoardAjaxService service;
