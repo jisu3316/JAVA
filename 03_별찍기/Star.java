@@ -6,7 +6,7 @@ class Star
 				System.out.print("*");
 				}
 				System.out.println();
-		}
+		} 
 				
 	}
 	void m2(){
